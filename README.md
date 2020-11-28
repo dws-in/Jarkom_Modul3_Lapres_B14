@@ -40,3 +40,7 @@
 
 ## Langkah-langkah pengerjaan:
 **1. Konfigurasi IP client.** <br>
+**2. Surabaya sebagai DHCP Relay.** <br>
+**3. Subnet1 range IP 192.168.0.10 sampai 192.168.0.100 dan 192.168.0.110 sampai 192.168.0.200.** <br>
+**4. Subnet3 range IP 192.168.1.50 sampai 192.168.1.70.** <br>
+**5. 
