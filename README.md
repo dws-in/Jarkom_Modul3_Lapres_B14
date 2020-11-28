@@ -58,15 +58,15 @@
 - Edit file `/etc/network/interfaces` pada MOJOKERTO sebagai Proxy Server dengan konfigurasi sebagai berikut: <br>
 ![alt text](/images/1.8.png) <br>
 - Edit file `/etc/network/interfaces` pada TUBAN sebagai DHCP Server dengan konfigurasi sebagai berikut: <br>
-![alt text](/images/1.9.png) <br>
+![alt text](/images/1.9.PNG) <br>
 
 **2. Surabaya sebagai DHCP Relay.** <br>
 - Edit file `/etc/sysctl.conf` pada SURABAYA dengan merubah `ip_forward` menjadi 1. <br>
-![alt text](/images/2.1.png) <br>
+![alt text](/images/2.1.PNG) <br>
 - Install DHCP Relay dengan menjalankan perintah `apt-get install isc-dhcp-relay`. <br>
 ![alt text](/images/2.2.png) <br>
 - Edit file `/etc/default/isc-dhcp-relay` dengan memasukkan IP TUBAN dan interfaces yang digunakan. <br>
-![alt text](/images/2.3.png) <br>
+![alt text](/images/2.3.PNG) <br>
 - Restart DHCP Relay dengan menjalankan perintah `service isc-dhcp-relay restart`. <br>
 ![alt text](/images/2.4.png) <br>
 
