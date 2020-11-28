@@ -7,7 +7,7 @@
 
 ## Topologi:
 - SURABAYA    : Router
-- Subnet1     : 
+- Subnet1     :
   - Switch1
   - GRESIK    : Client
   - SIDOARJO  : Client
@@ -41,6 +41,19 @@
 ## Langkah-langkah pengerjaan:
 **1. Konfigurasi IP client.** <br>
 **2. Surabaya sebagai DHCP Relay.** <br>
+1. Atur interfaces network pada UML Surabaya sesuai pada keterangan soal serta lakukan beberapa perubahan di `/etc/sysctl.conf` yaitu merubah `ip_forward` menjadi 1. <br>
+2. Install isc-dhcp-relay pada UML Surabaya dengan menggunakan perintah `apt-get install isc-dhcp-relay` <br>
+3. Atur konfigurasi dhcp-relay pada file `/etc/default/isc-dhcp-relay` kemudian isikan IP Tuban serta interfaces yang digunakan yaitu `eth1 eth2 eth3` <br>
+4. Restart dhcp-relay dengan `service isc-dhcp-relay restart` <br>
+
 **3. Subnet1 range IP 192.168.0.10 sampai 192.168.0.100 dan 192.168.0.110 sampai 192.168.0.200.** <br>
+1. Atur interfaces network pada UML Tuban <br>
+2. Kemudian install isc-dhcp-server dengan menggunakan perintah `apt-get install isc-dhcp-server` <br>
+3. Atur konfigurasi interface pada file `/etc/default/isc-dhcp-server` dengan mengisikan `eth0` <br>
+4. Atur konfigurasi DHCP pada file `etc/dhcp/dhcpd.conf` yaitu dengan mengisi settingan berikut:<br>
+5. Restart dhcp-server dengan `service isc-dhcp-server restart`<br>
+
 **4. Subnet3 range IP 192.168.1.50 sampai 192.168.1.70.** <br>
-**5. 
+1. Atur konfigurasi DHCP pada file `etc/dhcp/dhcpd.conf` yaitu dengan menambah settingan berikut:<br>
+2. Restart dhcp-server dengan `service isc-dhcp-server restart`<br>
+**5.
