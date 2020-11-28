@@ -36,7 +36,7 @@
 10. Setiap dia mengakses google.com, maka akan di redirect menuju monta.if.its.ac.id. <br>
 11. Mengubah error page default squid menjadi seperti berikut: <br>
 <img src="images/error-page.PNG" width="500"> <br>
-12. Menggunakan proxy cukup dengan mengetikkan domain janganlupa-ta.yyy.pw dan memasukkan port 8080. <br>
+12. Menggunakan proxy cukup dengan mengetikkan domain janganlupa-ta.b14.pw dan memasukkan port 8080. <br>
 
 ## Langkah-langkah pengerjaan:
 **1. Membuat domain `http://semerub14.pw` dengan DNS MALANG dan mengarah ke IP Server PROBOLINGGO.** <br>
