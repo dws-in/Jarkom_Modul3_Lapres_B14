@@ -69,14 +69,27 @@
 ![alt text](/images/2.3.PNG) <br>
 - Restart DHCP Relay dengan menjalankan perintah `service isc-dhcp-relay restart`. <br>
 ![alt text](/images/2.4.png) <br>
+- Install DHCP Server pada TUBAN dengan menjalankan perintah `apt-get install isc-dhcp-server`. <br>
+![alt text](/images/2.5.png) <br>
+- Edit file `/etc/default/isc-dhcp-server` dengan memasukkan `eth0`. <br>
+![alt text](/images/2.6.png) <br>
+- Restart DHCP Server dengan menjalankan perintah `service isc-dhcp-server restart`. <br>
+![alt text](/images/2.7.png) <br>
 
 **3. Subnet1 range IP 192.168.0.10 sampai 192.168.0.100 dan 192.168.0.110 sampai 192.168.0.200.** <br>
-- Install DHCP Server pada TUBAN dengan menjalankan perintah `apt-get install isc-dhcp-server`. <br>
+- Edit file `/etc/dhcp/dhcpd.conf` pada TUBAN dengan memasukkan subnet1 range yang sudah ditentukan. <br>
 ![alt text](/images/3.1.png) <br>
-- Edit file `/etc/default/isc-dhcp-server` dengan memasukkan `eth0`. <br>
+- Test pada GRESIK apakah telah mendapatkan IP. <br>
 ![alt text](/images/3.2.png) <br>
-- Restart DHCP Server dengan menjalankan perintah `service isc-dhcp-server restart`. <br>
+- Test pada SIDOARJO apakah telah mendapatkan IP. <br>
 ![alt text](/images/3.3.png) <br>
 
 **4. Subnet3 range IP 192.168.1.50 sampai 192.168.1.70.** <br>
+- Edit file `/etc/dhcp/dhcpd.conf` pada TUBAN dengan memasukkan subnet3 range yang sudah ditentukan. <br>
+![alt text](/images/4.1.png) <br>
+- Test pada BANYUWANGI apakah telah mendapatkan IP. <br>
+![alt text](/images/4.2.png) <br>
+- Test pada MADIUN apakah telah mendapatkan IP. <br>
+![alt text](/images/4.3.png) <br>
+
 **5. 
