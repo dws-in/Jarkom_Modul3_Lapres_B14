@@ -107,10 +107,30 @@
 ![alt text](/images/6.1.png) <br>
 
 **7. Membuat user autentikasi.** <br>
-- Jalankan `htpasswd /etc/squid3/passwd userta_b14` dan masukkan password `inipassw0rdta_b14`. <br>
+- Jalankan `htpasswd /etc/squid3/passwd userta_b14` pada MOJOKERTO dan masukkan password `inipassw0rdta_b14`. <br>
 ![alt text](/images/7.1.png) <br>
 - Hasilnya bisa diakses melalui browser Mozilla sebagai berikut. <br>
 ![alt text](/images/7.2.png) <br>
 
+**8. Akses internet setiap hari Selasa-Rabu pukul 13.00-18.00.** <br>
+- Edit file `/etc/squid3/acl.conf` pada MOJOKERTO sebagai berikut. <br>
+![alt text](/images/8.1.png) <br>
+
+**9. Akses internet setiap hari Selasa-Kamis pukul 21.00 - 09.00 keesokan harinya (sampai Jumat jam 09.00).** <br>
+- Edit file `/etc/squid3/acl.conf` pada MOJOKERTO sebagai berikut. <br>
+![alt text](/images/9.1.png) <br>
+- Lalu di squid.conf, untuk nomer 7. Perlu ditambahkan auth_param yang diarahkan pada passwd yang telah dibuat. Untuk nomer 8 dan 9, ditambahkan http_access allow untuk KERJA_TA, BIMBINGAN_MALAM, BIMBINGAN_PAGI yang di AND kan dengan USERS. <br>
+
+**10. Ditambahkan restricted site untuk google.com dan diarahkan ke monta.if.its.ac.id.** <br>
+- Edit file `/etc/squid3/squid.conf` pada MOJOKERTO sebagai berikut. <br>
+![alt text](/images/10.1.png) <br>
+- Hasilnya dapat dilihat ketika mengakses google.com di browser maka akan diarahkan ke monta.if.its.ac.id. <br>
+![alt text](/images/10.2.png) <br>
+
+**11. Ubah error page.** <br>
+- Download file dengan wget dan letakkan di ERR_ACCESS_DENIED. <br>
+![alt text](/images/11.1.png) <br>
+- Hasilnya dapat dilihat ketika mengakses google.com di browser maka akan diarahkan ke monta.if.its.ac.id. <br>
+![alt text](/images/11.2.png) <br>
 
 
