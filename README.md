@@ -39,10 +39,9 @@
 12. Menggunakan proxy cukup dengan mengetikkan domain janganlupa-ta.b14.pw dan memasukkan port 8080. <br>
 
 ## Langkah-langkah pengerjaan:
-**0. Membuat konfigurasi topologi.** <br>
+**1. Konfigurasi IP client.** <br>
 - Edit file topologi sebagai berikut: <br>
 ![alt text](/images/0.1.png) <br>
-**1. Konfigurasi IP client.** <br>
 - Edit file `/etc/network/interfaces` pada BANYUWANGI, MADIUN, GRESIK, dan SIDOARJO dengan konfigurasi seperti berikut: <br>
 ![alt text](/images/1.1.png) <br>
 ![alt text](/images/1.2.png) <br>
