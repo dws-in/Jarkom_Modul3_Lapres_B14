@@ -39,33 +39,44 @@
 12. Menggunakan proxy cukup dengan mengetikkan domain janganlupa-ta.b14.pw dan memasukkan port 8080. <br>
 
 ## Langkah-langkah pengerjaan:
+
 **1. Konfigurasi IP client.** <br>
-- Edit file topologi sebagai berikut: <br>
-![alt text](/images/0.1.png) <br>
-- Edit file `/etc/network/interfaces` pada BANYUWANGI, MADIUN, GRESIK, dan SIDOARJO dengan konfigurasi seperti berikut: <br>
+- Edit file `topologi.sh` sebagai berikut: <br>
 ![alt text](/images/1.1.png) <br>
+- Edit file `/etc/network/interfaces` pada SURABAYA sebagai DHCP Relay dengan konfigurasi seperti berikut: <br>
 ![alt text](/images/1.2.png) <br>
+- Edit file `/etc/network/interfaces` pada BANYUWANGI sebagai Client dengan konfigurasi seperti berikut: <br>
 ![alt text](/images/1.3.png) <br>
+- Edit file `/etc/network/interfaces` pada MADIUN sebagai Client dengan konfigurasi sebagai berikut: <br>
 ![alt text](/images/1.4.png) <br>
+- Edit file `/etc/network/interfaces` pada GRESIK sebagai Client dengan konfigurasi sebagai berikut: <br>
+![alt text](/images/1.5.png) <br>
+- Edit file `/etc/network/interfaces` pada SIDOARJO sebagai Client dengan konfigurasi sebagai berikut: <br>
+![alt text](/images/1.6.png) <br>
+- Edit file `/etc/network/interfaces` pada MALANG sebagai DNS Server dengan konfigurasi sebagai berikut: <br>
+![alt text](/images/1.7.png) <br>
+- Edit file `/etc/network/interfaces` pada MOJOKERTO sebagai Proxy Server dengan konfigurasi sebagai berikut: <br>
+![alt text](/images/1.8.png) <br>
+- Edit file `/etc/network/interfaces` pada TUBAN sebagai DHCP Server dengan konfigurasi sebagai berikut: <br>
+![alt text](/images/1.9.png) <br>
+
 **2. Surabaya sebagai DHCP Relay.** <br>
-- Edit file `/etc/network/interfaces` pada SURABAYA dengan konfigurasi seperti berikut: <br>
+- Edit file `/etc/sysctl.conf` pada SURABAYA dengan merubah `ip_forward` menjadi 1. <br>
 ![alt text](/images/2.1.png) <br>
-- Edit file `/etc/sysctl.conf` dengan merubah `ip_forward` menjadi 1. <br>
-![alt text](/images/2.2.png) <br>
 - Install DHCP Relay dengan menjalankan perintah `apt-get install isc-dhcp-relay`. <br>
-![alt text](/images/2.3.png) <br>
+![alt text](/images/2.2.png) <br>
 - Edit file `/etc/default/isc-dhcp-relay` dengan memasukkan IP TUBAN dan interfaces yang digunakan. <br>
-![alt text](/images/2.4.png) <br>
+![alt text](/images/2.3.png) <br>
 - Restart DHCP Relay dengan menjalankan perintah `service isc-dhcp-relay restart`. <br>
-![alt text](/images/2.5.png) <br>
+![alt text](/images/2.4.png) <br>
+
 **3. Subnet1 range IP 192.168.0.10 sampai 192.168.0.100 dan 192.168.0.110 sampai 192.168.0.200.** <br>
-- Edit file `/etc/network/interfaces` pada TUBAN dengan konfigurasi seperti berikut: <br>
+- Install DHCP Server pada TUBAN dengan menjalankan perintah `apt-get install isc-dhcp-server`. <br>
 ![alt text](/images/3.1.png) <br>
-- Install DHCP Server dengan menjalankan perintah `apt-get install isc-dhcp-server`. <br>
-![alt text](/images/3.2.png) <br>
 - Edit file `/etc/default/isc-dhcp-server` dengan memasukkan `eth0`. <br>
-![alt text](/images/3.3.png) <br>
+![alt text](/images/3.2.png) <br>
 - Restart DHCP Server dengan menjalankan perintah `service isc-dhcp-server restart`. <br>
-![alt text](/images/3.4.png) <br>
+![alt text](/images/3.3.png) <br>
+
 **4. Subnet3 range IP 192.168.1.50 sampai 192.168.1.70.** <br>
 **5. 
