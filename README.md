@@ -31,10 +31,12 @@
 7. User autentikasi memiliki format: <br>
    - User : userta_b14 <br>
    - Password : inipassw0rdta_b14 <br>
-8. Membatasi penggunaan internet setiap hari Selasa-Rabu pukul 13.00-18.00. <br>
+8. Penggunaan internet setiap hari Selasa-Rabu pukul 13.00-18.00. <br>
 9. Jadwal bimbingan setiap hari Selasa-Kamis pukul 21.00 - 09.00 keesokan harinya (sampai Jumat jam 09.00). <br>
 10. Setiap dia mengakses google.com, maka akan di redirect menuju monta.if.its.ac.id. <br>
-
+11. Mengubah error page default squid menjadi seperti berikut: <br>
+<img src="images/error-page.PNG" width="500"> <br>
+12. Menggunakan proxy cukup dengan mengetikkan domain janganlupa-ta.yyy.pw dan memasukkan port 8080. <br>
 
 ## Langkah-langkah pengerjaan:
 **1. Membuat domain `http://semerub14.pw` dengan DNS MALANG dan mengarah ke IP Server PROBOLINGGO.** <br>
