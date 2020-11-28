@@ -40,7 +40,7 @@
 
 ## Langkah-langkah pengerjaan:
 **0. Membuat konfigurasi topologi.** <br>
-- Edit file topologi sebagai berikut:
+- Edit file topologi sebagai berikut: <br>
 ![alt text](/images/0.1.png) <br>
 **1. Konfigurasi IP client.** <br>
 - Edit file `/etc/network/interfaces` pada BANYUWANGI, MADIUN, GRESIK, dan SIDOARJO dengan konfigurasi seperti berikut: <br>
