@@ -1,6 +1,6 @@
 # **Jarkom_Modul3_Lapres_B14**
 ### Anggota Kelompok:
-- IQBAAL PRATAMA PUTRA  (05111840000021)
+- IQBAAL PRATAMA PUTRA U+0009 (05111840000021)
 - DWI WAHYU SANTOSO     (05111840000121)
 
 <img src="images/topologi.PNG" width="500">
