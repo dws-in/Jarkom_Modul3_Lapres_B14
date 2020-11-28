@@ -133,4 +133,8 @@
 - Hasilnya dapat dilihat ketika mengakses google.com di browser maka akan diarahkan ke monta.if.its.ac.id. <br>
 ![alt text](/images/11.2.png) <br>
 
-
+**12. Membuat DNS di malang yang diarahakan ke IP Mojokerto.** <br>
+![alt text](/images/12.1.png) <br>
+![alt text](/images/12.2.png) <br>
+- Lalu pada saat menyalakan proxy bisa mengganti IP Mojokerto dengan menggunakan janganlupa-ta.b02.pw. Hasilnya: <br>
+![alt text](/images/12.3.png) <br>
