@@ -1,6 +1,6 @@
 # **Jarkom_Modul3_Lapres_B14**
 ### Anggota Kelompok:
-- IQBAAL PRATAMA PUTRA U+0009 (05111840000021)
+- IQBAAL PRATAMA PUTRA  (05111840000021)
 - DWI WAHYU SANTOSO     (05111840000121)
 
 <img src="images/topologi.PNG" width="500">
@@ -20,6 +20,21 @@
   - Switch3
   - BANYUWANGI: Client
   - MADIUN    : Client
-  
+
+## Soal:
+**1. Seluruh client TIDAK DIPERBOLEHKAN menggunakan konfigurasi IP Statis.**
+**2. SURABAYA ditunjuk sebagai perantara (DHCP Relay) antara DHCP Server dan client.**
+**3. Client pada subnet 1 mendapatkan range IP dari 192.168.0.10 sampai 192.168.0.100 dan 192.168.0.110 sampai 192.168.0.200.**
+**4. Client pada subnet 3 mendapatkan range IP dari 192.168.1.50 sampai 192.168.1.70.**
+**5. Client mendapatkan DNS Malang dan DNS 202.46.129.2 dari DHCP.**
+**6. Client di subnet 1 mendapatkan peminjaman alamat IP selama 5 menit, sedangkan client pada subnet 3 mendapatkan peminjaman IP selama 10 menit.**
+**7. User autentikasi milik Anri memiliki format:
+<br>
+     User : userta_yyy
+     Password : inipassw0rdta_yyy
+<br>
+     Keterangan : yyy adalah nama kelompok masing-masing. Contoh: userta_c01
+
+
 ## Langkah-langkah pengerjaan:
 **1. Membuat domain `http://semerub14.pw` dengan DNS MALANG dan mengarah ke IP Server PROBOLINGGO.** <br>
