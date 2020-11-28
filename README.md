@@ -77,7 +77,7 @@
 ![alt text](/images/2.7.png) <br>
 
 **3. Subnet1 range IP 192.168.0.10 sampai 192.168.0.100 dan 192.168.0.110 sampai 192.168.0.200.** <br>
-- Edit file `/etc/dhcp/dhcpd.conf` pada TUBAN dengan memasukkan subnet1 range yang sudah ditentukan. <br>
+- Edit file `/etc/dhcp/dhcpd.conf` pada TUBAN dengan memasukkan subnet 1 range yang sudah ditentukan. <br>
 ![alt text](/images/3.1.png) <br>
 - Test pada GRESIK apakah telah mendapatkan IP. <br>
 ![alt text](/images/3.2.png) <br>
@@ -85,11 +85,32 @@
 ![alt text](/images/3.3.png) <br>
 
 **4. Subnet3 range IP 192.168.1.50 sampai 192.168.1.70.** <br>
-- Edit file `/etc/dhcp/dhcpd.conf` pada TUBAN dengan memasukkan subnet3 range yang sudah ditentukan. <br>
+- Edit file `/etc/dhcp/dhcpd.conf` pada TUBAN dengan memasukkan subnet 3 range yang sudah ditentukan. <br>
 ![alt text](/images/4.1.png) <br>
 - Test pada BANYUWANGI apakah telah mendapatkan IP. <br>
 ![alt text](/images/4.2.png) <br>
 - Test pada MADIUN apakah telah mendapatkan IP. <br>
 ![alt text](/images/4.3.png) <br>
 
-**5. 
+**5. Cek setiap Client apakah telah mendapatkan DNS Malang dan DNS 202.46.129.2 dari DHCP.** <br>
+- Buka `/etc/resolv.conf` pada GRESIK. <br>
+![alt text](/images/5.1.png) <br>
+- Buka `/etc/resolv.conf` pada SIDOARJO. <br>
+![alt text](/images/5.2.png) <br>
+- Buka `/etc/resolv.conf` pada BANYUWANGI. <br>
+![alt text](/images/5.3.png) <br>
+- Buka `/etc/resolv.conf` pada MADIUN. <br>
+![alt text](/images/5.4.png) <br>
+
+**6. Subnet 1 diberi waktu 5x60 sec sedangkan subnet 3diberi waktu 10x60 sec.** <br>
+- Edit file `/etc/dhcp/dhcpd.conf` pada TUBAN dengan memasukkan default dan max lease time. <br>
+![alt text](/images/6.1.png) <br>
+
+**7. Membuat user autentikasi.** <br>
+- Jalankan `htpasswd /etc/squid3/passwd userta_b14` dan masukkan password `inipassw0rdta_b14`. <br>
+![alt text](/images/7.1.png) <br>
+- Hasilnya bisa diakses melalui browser Mozilla sebagai berikut. <br>
+![alt text](/images/7.2.png) <br>
+
+
+
