@@ -40,6 +40,14 @@
 
 ## Langkah-langkah pengerjaan:
 **1. Konfigurasi IP client.** <br>
+1. Atur interfaces network pada UML seluruh client, yaitu Banyuwangi, Madiun, Gresik, Sidoarjo dengan menambahkan settingan
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet dhcp
+```
 **2. Surabaya sebagai DHCP Relay.** <br>
 1. Atur interfaces network pada UML Surabaya sesuai pada keterangan soal serta lakukan beberapa perubahan di `/etc/sysctl.conf` yaitu merubah `ip_forward` menjadi 1. <br>
 2. Install isc-dhcp-relay pada UML Surabaya dengan menggunakan perintah `apt-get install isc-dhcp-relay` <br>
@@ -56,4 +64,5 @@
 **4. Subnet3 range IP 192.168.1.50 sampai 192.168.1.70.** <br>
 1. Atur konfigurasi DHCP pada file `etc/dhcp/dhcpd.conf` yaitu dengan menambah settingan berikut:<br>
 2. Restart dhcp-server dengan `service isc-dhcp-server restart`<br>
+
 **5.
