@@ -28,11 +28,12 @@
 4. Client pada subnet 3 mendapatkan range IP dari 192.168.1.50 sampai 192.168.1.70. <br>
 5. Client mendapatkan DNS Malang dan DNS 202.46.129.2 dari DHCP. <br>
 6. Client di subnet 1 mendapatkan peminjaman alamat IP selama 5 menit, sedangkan client pada subnet 3 mendapatkan peminjaman IP selama 10 menit. <br>
-7. User autentikasi milik Anri memiliki format:
-<br>
-     User : userta_b14
-     Password : inipassw0rdta_b14
-<br>
+7. User autentikasi memiliki format: <br>
+   - User : userta_b14 <br>
+   - Password : inipassw0rdta_b14 <br>
+8. Membatasi penggunaan internet setiap hari Selasa-Rabu pukul 13.00-18.00. <br>
+9. Jadwal bimbingan setiap hari Selasa-Kamis pukul 21.00 - 09.00 keesokan harinya (sampai Jumat jam 09.00). <br>
+10. Setiap dia mengakses google.com, maka akan di redirect menuju monta.if.its.ac.id. <br>
 
 
 ## Langkah-langkah pengerjaan:
