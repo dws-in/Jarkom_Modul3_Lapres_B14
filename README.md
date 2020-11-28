@@ -22,18 +22,17 @@
   - MADIUN    : Client
 
 ## Soal:
-**1. Seluruh client TIDAK DIPERBOLEHKAN menggunakan konfigurasi IP Statis.**
-**2. SURABAYA ditunjuk sebagai perantara (DHCP Relay) antara DHCP Server dan client.**
-**3. Client pada subnet 1 mendapatkan range IP dari 192.168.0.10 sampai 192.168.0.100 dan 192.168.0.110 sampai 192.168.0.200.**
-**4. Client pada subnet 3 mendapatkan range IP dari 192.168.1.50 sampai 192.168.1.70.**
-**5. Client mendapatkan DNS Malang dan DNS 202.46.129.2 dari DHCP.**
-**6. Client di subnet 1 mendapatkan peminjaman alamat IP selama 5 menit, sedangkan client pada subnet 3 mendapatkan peminjaman IP selama 10 menit.**
+**1. Seluruh client TIDAK DIPERBOLEHKAN menggunakan konfigurasi IP Statis.** <br>
+**2. SURABAYA ditunjuk sebagai perantara (DHCP Relay) antara DHCP Server dan client.** <br>
+**3. Client pada subnet 1 mendapatkan range IP dari 192.168.0.10 sampai 192.168.0.100 dan 192.168.0.110 sampai 192.168.0.200.** <br>
+**4. Client pada subnet 3 mendapatkan range IP dari 192.168.1.50 sampai 192.168.1.70.** <br>
+**5. Client mendapatkan DNS Malang dan DNS 202.46.129.2 dari DHCP.** <br>
+**6. Client di subnet 1 mendapatkan peminjaman alamat IP selama 5 menit, sedangkan client pada subnet 3 mendapatkan peminjaman IP selama 10 menit.** <br>
 **7. User autentikasi milik Anri memiliki format:
 <br>
-     User : userta_yyy
-     Password : inipassw0rdta_yyy
+     User : userta_b14
+     Password : inipassw0rdta_b14
 <br>
-     Keterangan : yyy adalah nama kelompok masing-masing. Contoh: userta_c01
 
 
 ## Langkah-langkah pengerjaan:
