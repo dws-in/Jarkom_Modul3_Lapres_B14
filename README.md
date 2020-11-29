@@ -7,7 +7,7 @@
 
 ## Topologi:
 - SURABAYA    : Router
-- Subnet1     : 
+- Subnet1     :
   - Switch1
   - GRESIK    : Client
   - SIDOARJO  : Client
@@ -119,7 +119,7 @@
 **9. Akses internet setiap hari Selasa-Kamis pukul 21.00 - 09.00 keesokan harinya (sampai Jumat jam 09.00).** <br>
 - Edit file `/etc/squid3/acl.conf` pada MOJOKERTO sebagai berikut. <br>
 ![alt text](/images/9.1.png) <br>
-- Lalu di squid.conf, untuk nomer 7. Perlu ditambahkan auth_param yang diarahkan pada passwd yang telah dibuat. Untuk nomer 8 dan 9, ditambahkan http_access allow untuk KERJA_TA, BIMBINGAN_MALAM, BIMBINGAN_PAGI yang di AND kan dengan USERS. <br>
+- Lalu di squid.conf, untuk nomer 7. Perlu ditambahkan auth_param yang diarahkan pada passwd yang telah dibuat. Untuk nomer 8 dan 9, ditambahkan http_access allow untuk waktu SATU, DUA, TIGA yang di AND kan dengan USERS. <br>
 
 **10. Ditambahkan restricted site untuk google.com dan diarahkan ke monta.if.its.ac.id.** <br>
 - Edit file `/etc/squid3/squid.conf` pada MOJOKERTO sebagai berikut. <br>
@@ -128,7 +128,7 @@
 ![alt text](/images/10.2.png) <br>
 
 **11. Ubah error page.** <br>
-- Download file dengan wget dan letakkan di ERR_ACCESS_DENIED. <br>
+- Download file dengan wget dan kemudian copy file tersebut ke folder `/usr/share/squid3/errors/English/` dengan perintah `cp -r`. <br>
 ![alt text](/images/11.1.png) <br>
 - Hasilnya dapat dilihat ketika mengakses google.com di browser maka akan diarahkan ke monta.if.its.ac.id. <br>
 ![alt text](/images/11.2.png) <br>
@@ -136,5 +136,5 @@
 **12. Membuat DNS di malang yang diarahakan ke IP Mojokerto.** <br>
 ![alt text](/images/12.1.png) <br>
 ![alt text](/images/12.2.png) <br>
-- Lalu pada saat menyalakan proxy bisa mengganti IP Mojokerto dengan menggunakan janganlupa-ta.b02.pw. Hasilnya: <br>
+- Lalu pada saat menyalakan proxy bisa mengganti IP Mojokerto dengan menggunakan janganlupa-ta.b14.pw. Hasilnya: <br>
 ![alt text](/images/12.3.png) <br>
