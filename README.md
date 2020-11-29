@@ -140,4 +140,5 @@
 - Edit file `/etc/bind/jarkom/janganlupa-ta.b14.pw` pada MALANG sebagai berikut. <br>
 ![alt text](/images/12.2.png) <br>
 - Lalu pada saat menyalakan proxy bisa mengganti IP Mojokerto dengan menggunakan janganlupa-ta.b14.pw. Hasilnya: <br>
-![alt text](/images/12.3.png) <br>
+![alt text](/images/12.3.jpeg) <br>
+![alt text](/images/12.4.jpeg) <br>
