@@ -102,7 +102,7 @@
 - Buka `/etc/resolv.conf` pada MADIUN. <br>
 ![alt text](/images/5.4.png) <br>
 
-**6. Subnet 1 diberi waktu 5x60 sec sedangkan subnet 3diberi waktu 10x60 sec.** <br>
+**6. Subnet 1 diberi waktu 5x60 sec sedangkan subnet 3 diberi waktu 10x60 sec.** <br>
 - Edit file `/etc/dhcp/dhcpd.conf` pada TUBAN dengan memasukkan default dan max lease time. <br>
 ![alt text](/images/6.1.png) <br>
 
@@ -119,7 +119,8 @@
 **9. Akses internet setiap hari Selasa-Kamis pukul 21.00 - 09.00 keesokan harinya (sampai Jumat jam 09.00).** <br>
 - Edit file `/etc/squid3/acl.conf` pada MOJOKERTO sebagai berikut. <br>
 ![alt text](/images/9.1.png) <br>
-- Lalu di squid.conf, untuk nomer 7. Perlu ditambahkan auth_param yang diarahkan pada passwd yang telah dibuat. Untuk nomer 8 dan 9, ditambahkan http_access allow untuk waktu SATU, DUA, TIGA yang di AND kan dengan USERS. <br>
+- Edit file `/etc/squid3/squid.conf`, untuk autentikasi perlu ditambahkan auth_param yang diarahkan pada passwd yang telah dibuat dan ditambahkan http_access allow untuk waktu SATU, DUA, TIGA yang di AND kan dengan USERS. <br>
+![alt text](/images/9.2.png) <br>
 
 **10. Ditambahkan restricted site untuk google.com dan diarahkan ke monta.if.its.ac.id.** <br>
 - Edit file `/etc/squid3/squid.conf` pada MOJOKERTO sebagai berikut. <br>
@@ -130,11 +131,13 @@
 **11. Ubah error page.** <br>
 - Download file dengan wget dan kemudian copy file tersebut ke folder `/usr/share/squid3/errors/English/` dengan perintah `cp -r`. <br>
 ![alt text](/images/11.1.png) <br>
-- Hasilnya dapat dilihat ketika mengakses google.com di browser maka akan diarahkan ke monta.if.its.ac.id. <br>
+- Hasilnya dapat dilihat ketika mengakses `google.com` di browser maka akan diarahkan ke `monta.if.its.ac.id`. <br>
 ![alt text](/images/11.2.png) <br>
 
 **12. Membuat DNS di malang yang diarahakan ke IP Mojokerto.** <br>
+- Edit file `/etc/bind/named.conf.local` pada MALANG sebagai berikut. <br>
 ![alt text](/images/12.1.png) <br>
+- Edit file `/etc/bind/jarkom/janganlupa-ta.b14.pw` pada MALANG sebagai berikut. <br>
 ![alt text](/images/12.2.png) <br>
 - Lalu pada saat menyalakan proxy bisa mengganti IP Mojokerto dengan menggunakan janganlupa-ta.b14.pw. Hasilnya: <br>
 ![alt text](/images/12.3.png) <br>
