@@ -131,7 +131,7 @@
 **11. Ubah error page.** <br>
 - Download file dengan wget dan kemudian copy file tersebut ke folder `/usr/share/squid3/errors/English/` dengan perintah `cp -r`. <br>
 ![alt text](/images/11.1.png) <br>
-- Hasilnya dapat dilihat ketika mengakses `google.com` di browser maka akan diarahkan ke `monta.if.its.ac.id`. <br>
+- Hasilnya dapat dilihat ketika mengakses web yang tidak bisa diakses. <br>
 ![alt text](/images/11.2.png) <br>
 
 **12. Membuat DNS di malang yang diarahakan ke IP Mojokerto.** <br>
